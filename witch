@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WitchWallet #WITCH</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Press+Start+2P&display=swap" rel="stylesheet">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; scroll-behavior:smooth; }
+  body {
+    font-family: 'Cinzel', serif;
+    color: #f5e6f5;
+    overflow-x: hidden;
+    background: #0b0b0b;
+    background-image: url('https://media.giphy.com/media/26BRzozg4TCBXv6QU/giphy.gif');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+  }
+
+  header {
+    text-align: center;
+    padding: 3rem 1rem;
+    background: rgba(18,0,18,0.85);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.7);
+    position: relative;
+  }
+
+  /* Interactive logo */
+  .logo {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    pointer-events: none;
+    transition: transform 0.1s ease;
+    z-index: 999;
+  }
+
+  header h1 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 2.2rem;
+    color: #ff00ff;
+    margin-bottom: 1rem;
+    text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff66ff;
+    animation: flicker 3s infinite;
+  }
+
+  @keyframes flicker {
+    0%,19%,21%,23%,25%,54%,56%,100%{opacity:1;}
+    20%,22%,24%,55%{opacity:0.6;}
+  }
+
+  header p { font-size: 1.1rem; color: #f5d6f5; }
+
+  section {
+    padding: 4rem 2rem;
+    max-width: 900px;
+    margin: 0 auto 2rem auto;
+    border-radius: 10px;
+    background: rgba(18,0,18,0.6);
+    border-bottom: 1px solid #330033;
+    position: relative;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+  }
+
+  section:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 40px #ff66ff;
+  }
+
+  section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #ff66ff;
+    text-align: center;
+    text-shadow: 0 0 8px #ff00ff;
+  }
+
+  section p, section ul { font-size: 1.05rem; margin-bottom: 1.5rem; }
+  ul { list-style: none; padding-left: 1rem; }
+  ul li::before { content: "🔮 "; }
+
+  .cta { text-align: center; margin: 3rem 0; }
+  .cta button {
+    background: #ff00ff;
+    color: #1a001a;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: 'Press Start 2P', cursive;
+    transition: 0.3s;
+    box-shadow: 0 0 10px #ff66ff;
+    animation: glowPulse 2s infinite alternate;
+  }
+  .cta button:hover {
+    background: #ff66ff;
+    transform: scale(1.1);
+    box-shadow: 0 0 40px #ff66ff;
+  }
+
+  @keyframes glowPulse {
+    0% { box-shadow: 0 0 10px #ff66ff; }
+    100% { box-shadow: 0 0 40px #ff66ff; }
+  }
+
+  footer {
+    text-align: center;
+    padding: 2rem;
+    background: rgba(18,0,18,0.85);
+    font-size: 0.9rem;
+    color: #aa66aa;
+  }
+
+  .particle {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background: #ff66ff;
+    border-radius: 50%;
+    opacity: 0.6;
+    animation: floatParticle linear infinite;
+  }
+  @keyframes floatParticle {
+    0% { transform: translateY(0) translateX(0); opacity: 0.5; }
+    50% { transform: translateY(-30px) translateX(20px); opacity: 1; }
+    100% { transform: translateY(0) translateX(0); opacity: 0.5; }
+  }
+</style>
+</head>
+<body>
+
+<img src="https://drive.google.com/file/d/1xTeRh1NYN0OuJha8kK-Aa9rn-KeBrg03/view?usp=sharing?text=WITCH" alt="WitchWallet Logo" class="logo">
+
+<header>
+  <h1>🧙‍♀️ Welcome to the Coven</h1>
+  <p>Enter a realm where crypto meets dark magic. WitchWallet isn’t just a token — it’s a living, breathing community bound by ritual rewards, seasonal events, and cursed loyalty.</p>
+</header>
+
+<section>
+  <h2>👁 Our Mission</h2>
+  <p>To unite degens, meme enjoyers, and shadow-traders into the strongest cult-community on the blockchain. We don’t chase hype — we conjure it.</p>
+</section>
+
+<section>
+  <h2>🕯 Community First</h2>
+  <p>The Coven decides. Your voice shapes:</p>
+  <ul>
+    <li>Spells (governance votes)</li>
+    <li>Burns (ritual supply events)</li>
+    <li>Rewards (potion drops)</li>
+    <li>Branding (meme campaigns)</li>
+  </ul>
+  <p>Every holder matters. Every holder strengthens the ritual.</p>
+</section>
+
+<section>
+  <h2>🔮 Haunted Rewards</h2>
+  <ul>
+    <li>Seasonal airdrops</li>
+    <li>Potion-based booster perks</li>
+    <li>Coven-only NFT access</li>
+    <li>Ritual giveaways</li>
+    <li>Halloween special events</li>
+  </ul>
+  <p>Become active… and the wallet sees you.</p>
+</section>
+
+<section>
+  <h2>🩸 Punish the Weak</h2>
+  <p>Paper hands are drained of blessings. Cowards lose their magic. Only fearless coven members thrive.</p>
+</section>
+
+<section>
+  <h2>🌘 Our Mascot</h2>
+  <p>A creepy, spellbound leather wallet. Eyes glowing. Watching holders… Punishing sellers. It protects those who believe.</p>
+</section>
+
+<section>
+  <h2>🧹 Join the Coven</h2>
+  <p>Follow us. Meme with us. Summon hype. This is more than a token — it’s a dark financial ritual.</p>
+  <p>Enter voluntarily. Stay eternally.</p>
+</section>
+
+<section class="cta">
+  <h2>🕯 Call to Action</h2>
+  <button onclick="alert('Ride the broom to the moon! 🚀🎃')">Buy. Hold. Cast.</button>
+</section>
+
+<footer>
+  &copy; 2025 WitchWallet #WITCH | All rights reserved.
+</footer>
+
+<script>
+  // Floating particles
+  for(let i=0; i<50; i++){
+    const p = document.createElement('div');
+    p.classList.add('particle');
+    p.style.left = Math.random()*window.innerWidth+'px';
+    p.style.top = Math.random()*window.innerHeight+'px';
+    p.style.animationDuration = (2+Math.random()*3)+'s';
+    document.body.appendChild(p);
+  }
+
+  // Interactive logo follows mouse
+  const logo = document.querySelector('.logo');
+  document.addEventListener('mousemove', (e)=>{
+    const x = e.clientX - logo.offsetWidth/2;
+    const y = e.clientY - logo.offsetHeight/2;
+    logo.style.transform = `translate(${x}px, ${y}px)`;
+  });
+</script>
+
+</body>
+</html>
